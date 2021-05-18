@@ -1,0 +1,18 @@
+@mixin wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+@mixin button-light {
+    text-decoration: none;
+    color: var(--text-white);
+    background-color: transparent;
+    border: 1px solid var(--text-white);
+    font-weight: bold;
+    padding: 0.75em 2em;
+
+    &:hover {
+        cursor: pointer;
+
+    }
+}

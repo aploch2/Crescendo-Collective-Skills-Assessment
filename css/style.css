@@ -1,3 +1,21 @@
+/* ----------------------------
+Table Of Contents
+-------------------------------
+
+# Variables
+# Mixins
+# Normalize
+# Navigation
+# Body
+
+---------------------------- */
+body {
+  background-color: var(--light-gray);
+}
+
+/* ----------------------------
+# Variables
+---------------------------- */
 :root {
   --white: #fff;
   --black: #000;
@@ -8,9 +26,15 @@
   --dark-blue: #001254;
   --banner-gradient-blue: #568ec0;
   --green: #01a49c;
+  --text-white: #fff;
 }
 
-/* reset styles */
+/* ----------------------------
+# Mixins
+---------------------------- */
+/* ----------------------------
+# Normalize
+---------------------------- */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -52,8 +76,55 @@ table {
   border-spacing: 0;
 }
 
-/* end reset styles */
-body {
-  background-color: var(--light-gray);
+/* ----------------------------
+# Navigation
+---------------------------- */
+/* ----------------------------
+# Body
+---------------------------- */
+.commitment {
+  background-color: var(--blue);
+  background-image: url("/img/fractal_bg.png");
+  padding: 100px 0;
+}
+
+.commitment h3, .commitment p {
+  width: 80%;
+  margin: 0 auto;
+  color: var(--text-white);
+  text-align: center;
+}
+
+.commitment h3 {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.commitment p {
+  margin-bottom: 2em;
+  font-size: 1.15em;
+  font-weight: 200;
+}
+
+.commitment .button-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.commitment .button-container .contact-us {
+  text-decoration: none;
+  color: var(--text-white);
+  background-color: transparent;
+  border: 1px solid var(--text-white);
+  font-weight: bold;
+  padding: 0.75em 2em;
+}
+
+.commitment .button-container .contact-us:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
