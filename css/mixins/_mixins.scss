@@ -17,3 +17,12 @@
 
     }
 }
+
+@mixin insight-color-style($color) {
+
+    border-bottom: 10px solid $color;
+
+    h4 {
+        color: $color;
+    }
+}

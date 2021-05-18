@@ -64,6 +64,54 @@ body {
     }
 }
 
+.spotlight {
+    @include wrapper;
+    padding: 2em 0;
+
+    h3 {
+        font-size: 2em;
+    }
+    h3 + p {
+        font-size: 0.8em;
+        margin-bottom: 1em;
+    }
+    .spotlight-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .spotlight-item {
+            background-color: var(--white);
+            padding: 1em;
+            box-shadow:0 0 5px rgba(0, 0, 0, 0.3);
+
+            h4 {
+                font-size: 2em;
+                font-weight: bold;
+            }
+            .spotlight-image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 1em;
+
+                img {
+                    mask-image: url('/img/insight_mask.png');
+                }
+            }
+        }
+        .spotlight-item-1 {
+            @include insight-color-style(var(--blue));
+        }
+        .spotlight-item-2 {
+            @include insight-color-style(var(--green));
+        }
+        .spotlight-item-3 {
+            @include insight-color-style(var(--light-blue));
+        }
+    }
+}
+
 .commitment {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0,0,0,0)5% 95%, rgba(0, 0, 0, 0.2)), url('/img/fractal_bg.png'), var(--blue);
     background-size: cover;

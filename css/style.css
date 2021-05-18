@@ -179,6 +179,74 @@ nav .nav-container .nav-items .nav-item a:hover {
   line-height: 1.25;
 }
 
+.spotlight {
+  width: 80%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 2em 0;
+}
+
+.spotlight h3 {
+  font-size: 2em;
+}
+
+.spotlight h3 + p {
+  font-size: 0.8em;
+  margin-bottom: 1em;
+}
+
+.spotlight .spotlight-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spotlight .spotlight-items .spotlight-item {
+  background-color: var(--white);
+  padding: 1em;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.spotlight .spotlight-items .spotlight-item h4 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.spotlight .spotlight-items .spotlight-item .spotlight-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.spotlight .spotlight-items .spotlight-item .spotlight-image img {
+  mask-image: url("/img/insight_mask.png");
+}
+
+.spotlight .spotlight-items .spotlight-item-1 {
+  border-bottom: 10px solid var(--blue);
+}
+
+.spotlight .spotlight-items .spotlight-item-1 h4 {
+  color: var(--blue);
+}
+
+.spotlight .spotlight-items .spotlight-item-2 {
+  border-bottom: 10px solid var(--green);
+}
+
+.spotlight .spotlight-items .spotlight-item-2 h4 {
+  color: var(--green);
+}
+
+.spotlight .spotlight-items .spotlight-item-3 {
+  border-bottom: 10px solid var(--light-blue);
+}
+
+.spotlight .spotlight-items .spotlight-item-3 h4 {
+  color: var(--light-blue);
+}
+
 .commitment {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0) 5% 95%, rgba(0, 0, 0, 0.2)), url("/img/fractal_bg.png"), var(--blue);
   background-size: cover;
