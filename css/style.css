@@ -89,8 +89,8 @@ nav .nav-container {
   max-width: 1920px;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
-  align-items: baseline;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
 
 nav .nav-container .logo {
@@ -98,6 +98,7 @@ nav .nav-container .logo {
   justify-content: flex-start;
   align-items: center;
   width: 30%;
+  flex-grow: 1;
 }
 
 nav .nav-container .logo .image-container {
@@ -107,7 +108,7 @@ nav .nav-container .logo .image-container {
 }
 
 nav .nav-container .logo .image-container img {
-  width: 100px;
+  width: 125px;
   display: inline;
   z-index: 2;
 }
@@ -122,7 +123,7 @@ nav .nav-container .logo p {
 }
 
 nav .nav-container .logo p span {
-  font-size: 0.45em;
+  font-size: 0.4em;
   color: var(--light-blue);
 }
 
