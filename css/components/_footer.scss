@@ -1,0 +1,15 @@
+footer {
+    background-color: var(--dark-gray);
+    padding: 25px 0 50px 0;
+
+    .footer-container {
+        @include wrapper;
+        display: flex;
+        justify-content: space-between;
+        color: var(--light-gray);
+
+        p {
+            font-size: 0.8em;
+        }
+    }
+}
