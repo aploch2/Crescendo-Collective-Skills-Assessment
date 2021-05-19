@@ -11,5 +11,91 @@ footer {
         p {
             font-size: 0.8em;
         }
+        .footer-right {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            p {
+                margin-right: 1em;
+            }
+            .fa-icon {
+                text-decoration: none;
+                margin-right: 1em;
+                transition: 0.2s ease-in-out;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+                &:hover {
+                    background-color: var(--blue);
+                    transition: 0.2s ease-in-out;
+                }
+            }
+            .icon-twitter {
+                @extend %fa-icon;
+                @extend .fab;
+                background-color: var(--light-gray);
+                padding: 3px;
+                border-radius: 50%;
+                width: 25px;
+                height: 25px;
+                text-align: center;
+                line-height: 1.20;
+                
+                &::before {
+                    content: fa-content($fa-var-twitter);
+                    color: var(--dark-gray);
+                }
+            }
+            .icon-facebook {
+                @extend %fa-icon;
+                @extend .fab;
+                background-color: var(--light-gray);
+                padding: 3px;
+                border-radius: 50%;
+                width: 25px;
+                height: 25px;
+                text-align: center;
+                line-height: 1.20;
+                
+                &::before {
+                    content: fa-content($fa-var-facebook-f);
+                    color: var(--dark-gray);
+                }
+            }
+            .icon-linkedIn {
+                @extend %fa-icon;
+                @extend .fab;
+                background-color: var(--light-gray);
+                padding: 3px;
+                border-radius: 50%;
+                width: 25px;
+                height: 25px;
+                text-align: center;
+                line-height: 1.20;
+                
+                &::before {
+                    content: fa-content($fa-var-linkedin-in);
+                    color: var(--dark-gray);
+                }
+            }
+            .icon-email {
+                @extend %fa-icon;
+                @extend .fas;
+                background-color: var(--light-gray);
+                padding: 3px;
+                border-radius: 50%;
+                width: 25px;
+                height: 25px;
+                text-align: center;
+                line-height: 1.20;
+                
+                &::before {
+                    content: fa-content($fa-var-envelope);
+                    color: var(--dark-gray);
+                }
+            }
+        }
     }
 }

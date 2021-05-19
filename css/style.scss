@@ -4,6 +4,7 @@
 Table Of Contents
 -------------------------------
 
+# FontAwesome
 # Variables
 # Mixins
 # Normalize
@@ -17,6 +18,14 @@ Table Of Contents
 
 ---------------------------- */
 
+
+/* ----------------------------
+# Font Awesome
+---------------------------- */
+
+@import 'fontawesome/fontawesome';
+@import 'fontawesome/solid';
+@import 'fontawesome/brands';
 
 /* ----------------------------
 # Variables
