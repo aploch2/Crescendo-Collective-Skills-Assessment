@@ -332,4 +332,39 @@ nav .nav-container .nav-items .nav-item a:hover {
 .commitment .button-container .contact-us:hover {
   cursor: pointer;
 }
+
+.upcoming-events {
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.upcoming-events h3 {
+  font-size: 1.75em;
+}
+
+.upcoming-events h3 + p {
+  font-size: 0.8em;
+}
+
+.upcoming-events .events-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  background-color: var(--dark-gray);
+  padding: 25px 0 50px 0;
+}
+
+footer .footer-container {
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  color: var(--light-gray);
+}
 /*# sourceMappingURL=style.css.map */
