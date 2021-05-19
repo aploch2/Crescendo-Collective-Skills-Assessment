@@ -86,7 +86,7 @@ nav {
 
 nav .nav-container {
   width: 80%;
-  max-width: 1920px;
+  max-width: 1280px;
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
@@ -97,7 +97,7 @@ nav .nav-container .logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 30%;
+  width: 35%;
   flex-grow: 1;
 }
 
@@ -127,8 +127,26 @@ nav .nav-container .logo p span {
   color: var(--light-blue);
 }
 
+@media screen and (max-width: 1320px) {
+  nav .nav-container .logo {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1155px) {
+  nav .nav-container .logo {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 1027px) {
+  nav .nav-container .logo {
+    width: 50%;
+  }
+}
+
 nav .nav-container .nav-items {
-  width: 70%;
+  width: 65%;
   display: flex;
   justify-content: space-evenly;
   align-items: baseline;
@@ -142,12 +160,31 @@ nav .nav-container .nav-items .nav-item a {
   color: var(--text-black);
   text-decoration: none;
   transition: 0.2s ease-in-out;
+  border-bottom: 2px solid transparent;
 }
 
 nav .nav-container .nav-items .nav-item a:hover {
   cursor: pointer;
-  border-bottom: 1px solid #000;
+  border-bottom: 2px solid #000;
   transition: 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 1320px) {
+  nav .nav-container .nav-items {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 1155px) {
+  nav .nav-container .nav-items {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 1027px) {
+  nav .nav-container .nav-items {
+    width: 50%;
+  }
 }
 
 /* ----------------------------
@@ -162,7 +199,7 @@ nav .nav-container .nav-items .nav-item a:hover {
 
 .banner h2, .banner p {
   width: 80%;
-  max-width: 1920px;
+  max-width: 1280px;
   margin: 0 auto;
   color: var(--text-white);
 }
@@ -182,7 +219,7 @@ nav .nav-container .nav-items .nav-item a:hover {
 
 .spotlight {
   width: 80%;
-  max-width: 1920px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 2em 0;
 }
@@ -256,7 +293,7 @@ nav .nav-container .nav-items .nav-item a:hover {
 
 .commitment h3, .commitment p {
   width: 80%;
-  max-width: 1920px;
+  max-width: 1280px;
   margin: 0 auto;
   color: var(--text-white);
   text-align: center;
@@ -276,7 +313,7 @@ nav .nav-container .nav-items .nav-item a:hover {
 
 .commitment .button-container {
   width: 80%;
-  max-width: 1920px;
+  max-width: 1280px;
   margin: 0 auto;
   display: flex;
   justify-content: center;
