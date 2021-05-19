@@ -237,6 +237,7 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2em 0;
+  color: var(--text-black);
 }
 
 .spotlight h3 {
@@ -274,6 +275,7 @@ body {
 
 .spotlight .spotlight-items .spotlight-item .spotlight-image img {
   mask-image: url("/img/insight_mask.png");
+  -webkit-mask-image: url("/img/insight_mask.png");
 }
 
 .spotlight .spotlight-items .spotlight-item-1 {

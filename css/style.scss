@@ -84,6 +84,7 @@ body {
 .spotlight {
     @include wrapper;
     padding: 2em 0;
+    color: var(--text-black);
 
     h3 {
         font-size: 2em;
@@ -114,6 +115,7 @@ body {
 
                 img {
                     mask-image: url('/img/insight_mask.png');
+                    -webkit-mask-image: url('/img/insight_mask.png');
                 }
             }
         }
