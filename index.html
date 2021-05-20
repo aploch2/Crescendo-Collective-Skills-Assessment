@@ -23,9 +23,10 @@
                     <div class="image-container">
                         <img src="/img/mobile_logo.png" alt="ACME Corporation's logo. ">
                     </div>
-                    <i class="fa-icon menu-icon"></i>
+                    <a class="fa-icon menu-icon" onClick="MobileNavToggle()"></a>
+                    <a class="fa-icon close-icon" onClick="MobileNavToggle()"></a>
                 </div>
-                <nav>
+                <nav class="primary-nav" id="primary-nav">
                     <ul class="nav-items">
                         <li class="nav-item"><a href="index.html">Home</a></li>
                         <li class="nav-item"><a href="about.html">About Us</a></li>
@@ -125,5 +126,6 @@
             </div>
         </div>
     </footer>
+<script src="/js/scripts.js" ></script>
 </body>
 </html>
