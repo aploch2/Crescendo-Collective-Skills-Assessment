@@ -1,4 +1,4 @@
-nav {
+.top-nav {
     border-bottom: 15px solid var(--dark-blue);
     
     .nav-container {
@@ -6,6 +6,7 @@ nav {
         display: flex;
         justify-content: space-evenly;
         align-items: flex-end;
+        position: relative;
         
         .logo {
             display: flex;
@@ -48,26 +49,70 @@ nav {
             @media screen and (max-width: 1055px) {
                 width: 50%
             }
-        }
-        .nav-items {
-            width: 65%;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: baseline;
-            
-            .nav-item {
-                padding-bottom: 1em;
+            @media screen and (max-width: 950px) {
+                display: none;
             }
-            .nav-item a {
-                color: var(--text-black);
-                text-decoration: none;
-                transition: 0.2s ease-in-out;
-                border-bottom: 2px solid transparent;
+        }
+        .mobile-logo {
+            display: none;            
+            
+            .image-container {
+                max-width: 70%;
+                padding: 0.25em 0;
+                display: flex;
+                justify-content: center;
 
-                &:hover {
-                    cursor: pointer;
-                    border-bottom: 2px solid #000;
+                img {
+                    max-width: 100%;
+                }
+            }
+            .menu-icon {
+                @extend %fa-icon;
+                @extend .fas;
+                font-size: 2em;
+                position: absolute;
+                right: 10%;
+                
+                &::before {
+                    content: fa-content($fa-var-bars);
+                    color: var(--dark-blue);
+                }
+
+            }
+            @media screen and (max-width: 950px) {
+                display: block;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+    
+            }
+        }
+        nav {
+            width: 65%;
+
+            .nav-items {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: baseline;
+                
+                .nav-item {
+                    padding-bottom: 1em;
+                }
+                .nav-item a {
+                    color: var(--text-black);
+                    text-decoration: none;
                     transition: 0.2s ease-in-out;
+                    border-bottom: 2px solid transparent;
+    
+                    &:hover {
+                        cursor: pointer;
+                        border-bottom: 2px solid #000;
+                        transition: 0.2s ease-in-out;
+                    }
+                }
+                @media screen and (max-width: 950px) {
+                    flex-direction: column;
+                    align-items: center;
                 }
             }
             @media screen and (max-width: 1355px) {
@@ -79,6 +124,15 @@ nav {
             @media screen and (max-width: 1055px) {
                 width: 50%
             }
+            @media screen and (max-width: 950px) {
+                position: absolute;
+                width: 100%;
+                top: 100px;
+                background: var(--light-gray);
+            }
+        }
+        @media screen and (max-width: 950px) {
+            width: 100%;
         }
     }
 }
