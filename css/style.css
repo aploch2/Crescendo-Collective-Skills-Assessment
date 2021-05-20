@@ -6341,6 +6341,7 @@ table {
 }
 
 .top-nav .nav-container .mobile-logo .close-icon {
+  display: none;
   font-size: 2em;
   position: absolute;
   right: 10%;
