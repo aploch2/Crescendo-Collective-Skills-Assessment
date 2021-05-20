@@ -6269,19 +6269,19 @@ nav .nav-container .logo p span {
   color: var(--light-blue);
 }
 
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 1355px) {
   nav .nav-container .logo {
     width: 40%;
   }
 }
 
-@media screen and (max-width: 1155px) {
+@media screen and (max-width: 1185px) {
   nav .nav-container .logo {
     width: 45%;
   }
 }
 
-@media screen and (max-width: 1027px) {
+@media screen and (max-width: 1055px) {
   nav .nav-container .logo {
     width: 50%;
   }
@@ -6311,19 +6311,19 @@ nav .nav-container .nav-items .nav-item a:hover {
   transition: 0.2s ease-in-out;
 }
 
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 1355px) {
   nav .nav-container .nav-items {
     width: 60%;
   }
 }
 
-@media screen and (max-width: 1155px) {
+@media screen and (max-width: 1185px) {
   nav .nav-container .nav-items {
     width: 55%;
   }
 }
 
-@media screen and (max-width: 1027px) {
+@media screen and (max-width: 1055px) {
   nav .nav-container .nav-items {
     width: 50%;
   }
