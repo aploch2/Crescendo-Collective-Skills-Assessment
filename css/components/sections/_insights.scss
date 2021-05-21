@@ -91,6 +91,10 @@
         }
     }
     .slider-dots {
-        @include slider-dots;
+        display: none;
+
+        @media screen and (max-width: 950px) {
+            @include slider-dots;
+        }
     }
 }
