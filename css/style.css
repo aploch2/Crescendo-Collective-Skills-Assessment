@@ -6248,6 +6248,12 @@ table {
   position: relative;
 }
 
+@media screen and (max-width: 1350px) {
+  .top-nav .nav-container {
+    width: 90%;
+  }
+}
+
 .top-nav .nav-container .logo {
   display: flex;
   justify-content: flex-start;
@@ -6459,6 +6465,15 @@ table {
     max-width: 1280px;
     margin: 0 auto;
   }
+}
+
+@media screen and (max-width: 950px) and (max-width: 1350px) {
+  body .top-nav .nav-container .responsive-nav .nav-items {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 950px) {
   body .top-nav .nav-container .responsive-nav .nav-items .nav-item {
     width: 100%;
     padding-bottom: 0;
@@ -6496,6 +6511,12 @@ table {
   }
 }
 
+@media screen and (max-width: 950px) and (max-width: 1350px) {
+  body .top-nav .nav-container .responsive-nav:before {
+    width: 90%;
+  }
+}
+
 /* ----------------------------
 # Body
 ---------------------------- */
@@ -6524,6 +6545,12 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   color: var(--text-white);
+}
+
+@media screen and (max-width: 1350px) {
+  .banner h2, .banner p {
+    width: 90%;
+  }
 }
 
 .banner h2 {
@@ -6571,7 +6598,7 @@ body {
     content: 'Research Professional Platform';
     position: absolute;
     top: 7em;
-    left: 10%;
+    left: 5%;
     color: var(--text-white);
     font-weight: 600;
   }
@@ -6586,6 +6613,12 @@ body {
   margin: 0 auto;
   padding: 2em 0;
   color: var(--text-black);
+}
+
+@media screen and (max-width: 1350px) {
+  .spotlight {
+    width: 90%;
+  }
 }
 
 .spotlight h3 {
@@ -6680,6 +6713,32 @@ body {
   }
 }
 
+.spotlight .slider-dots {
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: center;
+}
+
+.spotlight .slider-dots .slider-dot {
+  width: 10px;
+  height: 10px;
+  border: 0.5px solid var(--dark-gray);
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+
+.spotlight .slider-dots .slider-dot:hover {
+  cursor: pointer;
+}
+
+.spotlight .slider-dots .slider-dot:first-child {
+  background-color: var(--dark-gray);
+}
+
+.spotlight .slider-dots .slider-dot:last-child {
+  margin-right: 0;
+}
+
 /* ----------------------------
 # Commitment
 ---------------------------- */
@@ -6695,6 +6754,12 @@ body {
   margin: 0 auto;
   color: var(--text-white);
   text-align: center;
+}
+
+@media screen and (max-width: 1350px) {
+  .commitment h3, .commitment p {
+    width: 90%;
+  }
 }
 
 .commitment h3 {
@@ -6718,6 +6783,12 @@ body {
   align-items: center;
 }
 
+@media screen and (max-width: 1350px) {
+  .commitment .button-container {
+    width: 90%;
+  }
+}
+
 .commitment .button-container .contact-us {
   text-decoration: none;
   color: var(--text-white);
@@ -6739,6 +6810,12 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   padding: 50px 0;
+}
+
+@media screen and (max-width: 1350px) {
+  .upcoming-events {
+    width: 90%;
+  }
 }
 
 .upcoming-events h3 {
@@ -6884,6 +6961,27 @@ body {
   .upcoming-events .events-container .event-card .event-footer .event-location {
     color: var(--dark-gray);
   }
+  .upcoming-events .slider-dots {
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: center;
+  }
+  .upcoming-events .slider-dots .slider-dot {
+    width: 10px;
+    height: 10px;
+    border: 0.5px solid var(--dark-gray);
+    border-radius: 50%;
+    margin-right: 0.5em;
+  }
+  .upcoming-events .slider-dots .slider-dot:hover {
+    cursor: pointer;
+  }
+  .upcoming-events .slider-dots .slider-dot:first-child {
+    background-color: var(--dark-gray);
+  }
+  .upcoming-events .slider-dots .slider-dot:last-child {
+    margin-right: 0;
+  }
 }
 
 /* ----------------------------
@@ -6901,6 +6999,12 @@ footer .footer-container {
   display: flex;
   justify-content: space-between;
   color: var(--light-gray);
+}
+
+@media screen and (max-width: 1350px) {
+  footer .footer-container {
+    width: 90%;
+  }
 }
 
 footer .footer-container p {
@@ -7025,6 +7129,15 @@ footer .footer-container .footer-mobile {
     max-width: 1280px;
     margin: 0 auto;
   }
+}
+
+@media screen and (max-width: 950px) and (max-width: 1350px) {
+  footer .footer-container .footer-mobile .footer-nav ul {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 950px) {
   footer .footer-container .footer-mobile .footer-nav ul li {
     width: 100%;
   }
@@ -7081,6 +7194,15 @@ footer .footer-container .footer-mobile {
     margin-bottom: 0.5em;
     text-align: center;
   }
+}
+
+@media screen and (max-width: 950px) and (max-width: 1350px) {
+  footer .footer-container .footer-mobile .footer-nav .footer-bottom:before {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 950px) {
   footer .footer-container .footer-left, footer .footer-container .footer-right {
     display: none;
   }

@@ -90,4 +90,7 @@
             }
         }
     }
+    .slider-dots {
+        @include slider-dots;
+    }
 }
