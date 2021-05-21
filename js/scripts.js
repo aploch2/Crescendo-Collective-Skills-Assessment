@@ -12,7 +12,6 @@ function MobileNavShow() {
         } else {
           x.className = "primary-nav";
         }
-        console.log('Show');
     }
 }
 function MobileNavHide() {
@@ -29,6 +28,5 @@ function MobileNavHide() {
         } else {
           x.className = "primary-nav";
         }
-        console.log('Hide');
     }
 }

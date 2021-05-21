@@ -6167,7 +6167,9 @@ footer .footer-container .footer-right .icon-linkedIn {
 :root {
   --white: #fff;
   --black: #000;
+  --ultra-light-gray: #eaecee;
   --light-gray: #ebebeb;
+  --mid-gray: #ccc;
   --dark-gray: #707070;
   --blue: #1450d2;
   --light-blue: #009bfa;
@@ -6437,6 +6439,12 @@ table {
 }
 
 @media screen and (max-width: 950px) {
+  .top-nav {
+    border-bottom: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
   body .top-nav .nav-container .responsive-nav {
     display: block;
     position: absolute;
@@ -6444,6 +6452,7 @@ table {
     top: 65px;
     background: var(--white);
     padding: 25px 0 50px 0;
+    z-index: 5;
   }
   body .top-nav .nav-container .responsive-nav .nav-items {
     width: 80%;
@@ -6494,6 +6503,12 @@ body {
   background-color: var(--light-gray);
 }
 
+@media screen and (max-width: 950px) {
+  body {
+    background-color: var(--light-gray);
+  }
+}
+
 /* ----------------------------
 # Banner
 ---------------------------- */
@@ -6522,6 +6537,44 @@ body {
   font-weight: 200;
   font-size: 1.75em;
   line-height: 1.25;
+}
+
+@media screen and (max-width: 950px) {
+  .banner {
+    background: var(--light-blue);
+  }
+  .banner h2 {
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.5;
+  }
+  .banner h2 .large-text {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1;
+  }
+  .banner h2 .large-text::after {
+    content: '. . . . . . . . . . . . . . . . . ';
+    display: block;
+    font-size: 0.6em;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .banner h2 .large-text .line-break {
+    display: block;
+    line-height: 1;
+  }
+  .banner p {
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  .banner::before {
+    content: 'Research Professional Platform';
+    position: absolute;
+    top: 7em;
+    left: 10%;
+    color: var(--text-white);
+    font-weight: 600;
+  }
 }
 
 /* ----------------------------
@@ -6573,6 +6626,10 @@ body {
   -webkit-mask-image: url("/img/insight_mask.png");
 }
 
+.spotlight .spotlight-items .spotlight-item .spotlight-image img + img {
+  display: none;
+}
+
 .spotlight .spotlight-items .spotlight-item-1 {
   border-bottom: 10px solid var(--blue);
 }
@@ -6595,6 +6652,32 @@ body {
 
 .spotlight .spotlight-items .spotlight-item-3 h4 {
   color: var(--light-blue);
+}
+
+@media screen and (max-width: 950px) {
+  .spotlight {
+    width: 100%;
+    padding: 5%;
+    background-color: var(--dark-blue);
+    color: var(--text-white);
+    overflow: hidden;
+  }
+  .spotlight .spotlight-item {
+    max-width: 80%;
+    margin-right: 1em;
+  }
+  .spotlight .spotlight-item .spotlight-image img {
+    overflow: hidden;
+  }
+  .spotlight .spotlight-items .spotlight-item-2 {
+    max-height: 80%;
+  }
+  .spotlight .spotlight-items .spotlight-item-1 {
+    border-bottom: 10px solid var(--green);
+  }
+  .spotlight .spotlight-items .spotlight-item-1 h4 {
+    color: var(--green);
+  }
 }
 
 /* ----------------------------
@@ -6718,7 +6801,7 @@ body {
   z-index: -1;
   display: block;
   position: absolute;
-  left: -19%;
+  left: -20%;
   top: 0;
   width: 20%;
   height: 20%;
@@ -6747,23 +6830,60 @@ body {
 .upcoming-events .events-container .event-card .event-footer .event-location {
   background-color: var(--light-gray);
   color: var(--text-black);
-  font-weight: bold;
+  font-weight: normal;
   text-align: right;
   width: 75%;
   padding: 0.5em;
   position: relative;
 }
 
+.upcoming-events .events-container .event-card .event-footer .event-location span {
+  font-weight: bold;
+}
+
 .upcoming-events .events-container .event-card .event-footer .event-location::before {
   content: '';
   display: block;
   position: absolute;
-  left: -20%;
+  left: -19.95%;
   top: 0;
   width: 20%;
   height: 100%;
   z-index: 1;
   background: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 50%, var(--light-gray) 50.5%);
+}
+
+@media screen and (max-width: 950px) {
+  .upcoming-events {
+    width: 100%;
+    padding: 5%;
+    overflow: hidden;
+  }
+  .upcoming-events h3 {
+    color: var(--dark-blue);
+  }
+  .upcoming-events h3 span {
+    font-weight: bold;
+  }
+  .upcoming-events h3 + p {
+    color: var(--dark-gray);
+  }
+  .upcoming-events .events-container .event-card {
+    flex-shrink: 0;
+    background-color: var(--dark-blue);
+    width: 350px;
+    margin-right: 1em;
+  }
+  .upcoming-events .events-container .event-card .event-body .event-date {
+    color: var(--green);
+    background-color: var(--white);
+  }
+  .upcoming-events .events-container .event-card .event-body .event-date::before {
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 50%, var(--dark-gray) 50.5%);
+  }
+  .upcoming-events .events-container .event-card .event-footer .event-location {
+    color: var(--dark-gray);
+  }
 }
 
 /* ----------------------------

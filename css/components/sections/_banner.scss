@@ -1,0 +1,61 @@
+.banner {
+    background-image: linear-gradient(75deg, rgba(57, 105, 141, 0.6) 20%, rgba(255,255,255,0)), url('/img/banner_bg.png');
+    background-size: cover;
+    background-position: 0% 15%;
+    padding: 100px 0;
+
+    h2, p {
+        @include wrapper;
+        color: var(--text-white);
+    }
+    h2 {
+        font-size: 2.5em;
+        font-weight: bold;
+        line-height: 1;
+        margin-bottom: 0.5em;
+    }
+    p {
+        font-weight: 200;
+        font-size: 1.75em;
+        line-height: 1.25;
+    }
+    @media screen and (max-width: 950px) {
+        background: var(--light-blue);
+        // position: relative;
+
+        h2 {
+            font-size: 1em;
+            font-weight: normal;
+            line-height: 1.5;
+
+            .large-text {
+                font-size: 2em;
+                font-weight: bold;
+                line-height: 1;
+
+                &::after {
+                    content: '. . . . . . . . . . . . . . . . . ';
+                    display: block;
+                    font-size: 0.6em;
+                    color: rgba(255,255,255,0.5);
+                }
+                .line-break {
+                    display: block;
+                    line-height: 1;
+                }
+            }
+        }
+        p {
+            font-size: 1em;
+            line-height: 1.5;
+        }
+        &::before {
+            content: 'Research Professional Platform';
+            position: absolute;
+            top: 7em;
+            left: 10%;
+            color: var(--text-white);
+            font-weight: 600;
+        }
+    }
+}

@@ -57,226 +57,38 @@ Table Of Contents
 
 body {
     background-color: var(--light-gray);
+
+    @media screen and (max-width: 950px) {
+        background-color: var(--light-gray);
+    }
 }
 
 /* ----------------------------
 # Banner
 ---------------------------- */
 
-.banner {
-    background-image: linear-gradient(75deg, rgba(57, 105, 141, 0.6) 20%, rgba(255,255,255,0)), url('/img/banner_bg.png');
-    background-size: cover;
-    background-position: 0% 15%;
-    padding: 100px 0;
-
-    h2, p {
-        @include wrapper;
-        color: var(--text-white);
-    }
-    h2 {
-        font-size: 2.5em;
-        font-weight: bold;
-        line-height: 1;
-        margin-bottom: 0.5em;
-    }
-    p {
-        font-weight: 200;
-        font-size: 1.75em;
-        line-height: 1.25;
-    }
-}
+@import 'components/sections/banner';
 
 /* ----------------------------
 # Insights
 ---------------------------- */
 
-.spotlight {
-    @include wrapper;
-    padding: 2em 0;
-    color: var(--text-black);
+@import 'components/sections/insights';
 
-    h3 {
-        font-size: 2em;
-    }
-    h3 + p {
-        font-size: 0.8em;
-        margin-bottom: 1em;
-    }
-    .spotlight-items {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
 
-        .spotlight-item {
-            background-color: var(--white);
-            padding: 1em;
-            box-shadow:0 0 5px rgba(0, 0, 0, 0.3);
-
-            h4 {
-                font-size: 1.75em;
-                font-weight: bold;
-            }
-            .spotlight-image {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 1em;
-
-                img {
-                    mask-image: url('/img/insight_mask.png');
-                    -webkit-mask-image: url('/img/insight_mask.png');
-                }
-            }
-        }
-        .spotlight-item-1 {
-            @include insight-color-style(var(--blue));
-        }
-        .spotlight-item-2 {
-            @include insight-color-style(var(--green));
-        }
-        .spotlight-item-3 {
-            @include insight-color-style(var(--light-blue));
-        }
-    }
-}
 
 /* ----------------------------
 # Commitment
 ---------------------------- */
 
-.commitment {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0,0,0,0)5% 95%, rgba(0, 0, 0, 0.2)), url('/img/fractal_bg.png'), var(--blue);
-    background-size: cover;
-    padding: 100px 0;
-
-    h3, p {
-        @include wrapper;
-        color: var(--text-white);
-        text-align: center;
-    }
-    h3 {
-        font-size: 2em;
-        font-weight: bold;
-        margin-bottom: 0.5em;
-    }
-    p {
-        margin-bottom: 2em;
-        font-size: 1.15em;
-        font-weight: 200;
-    }
-    .button-container {
-        @include wrapper;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        .contact-us {
-            @include button-light;
-        }
-    }
-}
+@import 'components/sections/commitment';
 
 /* ----------------------------
 # Events
 ---------------------------- */
 
-.upcoming-events {
-    @include wrapper;
-    padding: 50px 0;
+@import 'components/sections/events';
 
-    h3 {
-        font-size: 1.75em;
-    }
-    h3 + p {
-        font-size: 0.8em;
-        margin-bottom: 2em;
-    }
-    .events-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
-        .event-card {
-            background-color: var(--blue);
-            color: var(--text-white);
-            position: relative;
-            max-width: 350px;
-
-            .event-body {
-                padding: 5em 1em 0 1em;
-
-                h4 {
-                font-size: 1.5em;
-                    font-weight: 500;
-                }
-                h4 + p {
-                    font-size: 0.8em;
-                    margin-bottom: 2em;
-                }
-                .event-date {
-                    background-color: var(--dark-blue);
-                    display: inline-block;
-                    padding: 1em;
-                    position: absolute;
-                    top: -1em;
-                    left: 1.5em;
-                    font-weight: 200;
-                    text-transform: uppercase;
-                    text-align: center;
-                    line-height: 1;
-
-                    span {
-                        font-size: 2em;
-                        font-weight: bold;
-                        line-height: 1;
-                    }
-                    &:before{
-                        content: '';
-                        z-index: -1;
-                        display: block;
-                        position: absolute;
-                        left: -19%;
-                        top: 0;
-                        width: 20%;
-                        height: 20%;
-                        background: linear-gradient(to bottom right, rgba(0,0,0,0) 50%, var(--shadow-blue) 50.5%);
-                    }
-                }
-                .button-border {
-                    @include button-light;
-                    margin-bottom: 2em;
-                } 
-            }
-            .event-footer {
-                display: flex;
-                justify-content: flex-end;
-
-                .event-location {
-                background-color: var(--light-gray);
-                color: var(--text-black);
-                font-weight: bold;
-                text-align: right;
-                width: 75%;
-                padding: 0.5em;
-                position: relative;
-
-                &::before {
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    left: -20%;
-                    top: 0;
-                    width: 20%;
-                    height: 100%;
-                    z-index: 1;
-                    background: linear-gradient(to bottom right, rgba(0,0,0,0) 50%, var(--light-gray) 50.5%);
-                    
-                }
-                }
-            }
-        }
-    }
-}
 
 /* ----------------------------
 # Footer

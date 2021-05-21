@@ -1,0 +1,93 @@
+.spotlight {
+    @include wrapper;
+    padding: 2em 0;
+    color: var(--text-black);
+
+    h3 {
+        font-size: 2em;
+    }
+    h3 + p {
+        font-size: 0.8em;
+        margin-bottom: 1em;
+    }
+    .spotlight-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .spotlight-item {
+            background-color: var(--white);
+            padding: 1em;
+            box-shadow:0 0 5px rgba(0, 0, 0, 0.3);
+
+            h4 {
+                font-size: 1.75em;
+                font-weight: bold;
+            }
+            .spotlight-image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 1em;
+
+                img {
+                    mask-image: url('/img/insight_mask.png');
+                    -webkit-mask-image: url('/img/insight_mask.png');
+                }
+                img + img {
+                    display: none;
+                }
+            }
+        }
+        .spotlight-item-1 {
+            @include insight-color-style(var(--blue));
+        }
+        .spotlight-item-2 {
+            @include insight-color-style(var(--green));
+        }
+        .spotlight-item-3 {
+            @include insight-color-style(var(--light-blue));
+        }
+    }
+    @media screen and (max-width: 950px) {
+        width: 100%;
+        padding: 5%;
+        background-color: var(--dark-blue);
+        color: var(--text-white);
+        overflow: hidden;
+        
+        .spotlight-item {
+            max-width: 80%;
+            margin-right: 1em;
+
+            .spotlight-image {
+                
+                img {
+                    overflow: hidden;
+                }
+            }
+        }
+        .spotlight-items .spotlight-item-2 {
+            max-height: 80%;
+        }
+        .spotlight-items .spotlight-item-1 {
+            @include insight-color-style(var(--green));
+            // max-width: 100%;
+
+            .spotlight-image {
+                // max-width: 100%;
+
+                img {
+                    // max-width: 100%;
+
+                    &:first-child {
+                        // display: none;
+                    }
+                }
+                img + img {
+                    // display: block;
+                }
+            }
+        }
+    }
+}
