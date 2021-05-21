@@ -18,7 +18,8 @@
             background-color: var(--blue);
             color: var(--text-white);
             position: relative;
-            max-width: 350px;
+            width: 350px;
+            max-width: 30%;
 
             .event-body {
                 padding: 5em 1em 0 1em;
