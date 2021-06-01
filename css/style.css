@@ -6633,7 +6633,6 @@ body {
 .spotlight .spotlight-items {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 .spotlight .spotlight-items .spotlight-item {
@@ -6700,7 +6699,7 @@ body {
     overflow: hidden;
   }
   .spotlight .spotlight-item {
-    max-width: 80%;
+    min-width: 80%;
     margin-right: 1em;
   }
   .spotlight .spotlight-item .spotlight-image img {
@@ -6844,7 +6843,7 @@ body {
   color: var(--text-white);
   position: relative;
   width: 350px;
-  max-width: 30%;
+  width: 30%;
 }
 
 .upcoming-events .events-container .event-card .event-body {
